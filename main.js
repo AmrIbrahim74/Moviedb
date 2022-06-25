@@ -172,7 +172,7 @@ let userRepasswordAlert = document.getElementById("rePasswordAlert");
     }
     function userAgeValid() {
 
-        return 1 == /^[0-1]{1}[0-9]{0,2}/.test(userAge.value) ? (userAgeAlert.style.display = "none", !0) : (userAgeAlert.style.display = "block", !1)
+        return 1 == /^[1-9]{1}[0-9]{1}$/.test(userAge.value) ? (userAgeAlert.style.display = "none", !0) : (userAgeAlert.style.display = "block", !1)
     }
     function userPasswordValid() {
         return 1 == /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(userPassword.value) ? (userpasswordAlert.style.display = "none", !0) : (userpasswordAlert.style.display = "block", !1)
